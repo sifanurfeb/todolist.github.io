@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(21, 167, 21);
+}
+.todo{
+    background-color: #ffff;
+    padding: 20px;
+    margin: 100px 350px;
+    width: 50%;
+    border-radius: 20px;
+}
+.todo h4{
+    margin: 10px 0;
+}
+.todo p {
+    margin: 15px 0;
+    font-style: italic;
+    font-weight: 500;
+}
+.todo form{
+    display: inline-block;
+    padding-bottom: 20px;
+}
+.todo .todo-isi{
+    width: 500px;
+    height: 30px;
+}
+.todo .addTodo{
+    margin: 0 20px;
+    padding: 2px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(34, 187, 238);
+    color: #ffff;
+}
+.todo .addTodo:hover{
+    background-color: rgb(0, 128, 170);
+    transition: all ease-in-out .5s;
+    cursor: pointer;
+}
+.todo .control-wrapper{
+    display: flex;
+    justify-content:space-around;
+}
+.control-wrapper .pretty-button{
+    padding: 2px 20px;
+    border-radius: 5px;
+    border: none;
+    color: #ffff;
+}
+.control-wrapper .pretty-button:nth-child(1){
+    background-color: rgb(25, 162, 247);
+}
+.control-wrapper .pretty-button:nth-child(2){
+    background-color: rgb(247, 25, 25);
+}
+.control-wrapper .pretty-button:nth-child(3){
+    background-color: rgb(103, 230, 110);
+}
+
+.control-wrapper .pretty-button:nth-child(1):hover{
+    transition: all ease-in .5s;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.control-wrapper .pretty-button:nth-child(2):hover{
+    transition: all ease-in .5s;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.control-wrapper .pretty-button:nth-child(3):hover{
+    transition: all ease-in .5s;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.todo ol {
+    margin: 20px 0;
+}
+
+.todo ol li {
+    margin: 2px 50px;
+    padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.todo ol li:hover{
+    cursor: pointer;
+}
+.todo ol li:nth-child(even) {
+    background: #ddd;
+}
+
+.todo .completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo {
+        width: 50%;
+    }
+
+    .todo input {
+        width: 600px;
+    }
+    
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo {
+        width: 55%;
+        margin-left: 250px;
+    }
+
+    .todo .todo-isi {
+        width: 180%;
+    }
+    .todo .addTodo{
+        margin-left: 140px;
+    }
+}
